@@ -2,13 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Nav from './Nav';
 import Footer from './Footer';
+import GlobalStyles from '../styles/GlobalStyles';
 
 const Layout = ({ children }) => (
-  <div>
+  <>
+    <GlobalStyles />
     <Nav />
     {children}
     <Footer />
-  </div>
+  </>
 );
 
 export default Layout;
